@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 50vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  color: white;
+
+  background-color: rgba(37, 163, 87, 0.276);
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur (10px);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.top-menu {
+    background-color: rgb(67, 208, 91);
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+  gap: 1.5rem;
+}
+
+.logo > img {
+  width: 85px;
+  height: 85px;
+}
+
+.logo:hover {
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-menu ul li {
+  transition: all 0.4s;
+}
+
+.top-menu ul li:hover {
+  color: rgba(131, 251, 179, 0.839);
+  transform: translate(-2px, -2px);
+  cursor: pointer;
+}
+
+.content {
+  padding: 1rem 2rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background-color: rgba(77, 159, 80, 0.32);
+  color: white;
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  border-radius: 12px;
+  /* backdrop-filter: blur(5px); */
+}
+
+.img1 {
+  height: 60vh;
+  background: url(./assests/img1.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  height: 60vh;
+  background: url(./assests/img2.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img3 {
+  height: 60vh;
+  background: url(./assests/img3.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img4 {
+  height: 60vh;
+  background: url(./assests/img4.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  padding: 2rem;
+  background-color: rgba(22, 121, 38, 0.605);
+  font-size: 1.1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
